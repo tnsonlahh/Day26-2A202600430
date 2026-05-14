@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Tools And Resources Discovered</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: #f5f7fa;
+      color: #172033;
+      font-family: "Segoe UI", Arial, sans-serif;
+      line-height: 1.45;
+    }
+    main {
+      width: 1180px;
+      min-height: 760px;
+      padding: 34px 42px;
+    }
+    .topline {
+      color: #516071;
+      font-size: 15px;
+      margin-bottom: 6px;
+    }
+    h1 {
+      font-size: 30px;
+      margin: 0 0 8px;
+      letter-spacing: 0;
+    }
+    .subtitle {
+      color: #516071;
+      font-size: 17px;
+      margin-bottom: 24px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      margin-bottom: 22px;
+    }
+    .tile {
+      background: white;
+      border: 1px solid #dce3ea;
+      border-radius: 8px;
+      padding: 16px;
+      min-height: 94px;
+    }
+    .label {
+      color: #516071;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: .06em;
+      margin-bottom: 8px;
+    }
+    .value {
+      font-size: 20px;
+      font-weight: 650;
+    }
+    pre {
+      margin: 0;
+      background: #111827;
+      color: #d7ffe3;
+      border-radius: 8px;
+      padding: 20px;
+      font: 15px/1.45 Consolas, "Courier New", monospace;
+      white-space: pre-wrap;
+      overflow: hidden;
+    }
+    .two {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 16px;
+      align-items: start;
+    }
+    .panel {
+      background: white;
+      border: 1px solid #dce3ea;
+      border-radius: 8px;
+      padding: 16px;
+    }
+    .ok { color: #0b7a3b; }
+    .err { color: #b42318; }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="topline">SQLite FastMCP Lab Demo</div>
+    <h1>Tools And Resources Discovered</h1>
+    <div class="subtitle">FastMCP client can discover the required tools, resource, and resource template.</div>
+    
+<div class="grid">
+  <div class="tile"><div class="label">Tools</div><div class="value">search, insert, aggregate</div></div>
+  <div class="tile"><div class="label">Resources</div><div class="value">schema://database</div></div>
+  <div class="tile"><div class="label">Templates</div><div class="value">schema://table/{table_name}</div></div>
+</div>
+
+<div class="panel">
+  <div class="label">Discovery Payload</div>
+  <pre>{
+  &quot;tools&quot;: [
+    &quot;search&quot;,
+    &quot;insert&quot;,
+    &quot;aggregate&quot;
+  ],
+  &quot;resources&quot;: [
+    &quot;schema://database&quot;
+  ],
+  &quot;resource_templates&quot;: [
+    &quot;schema://table/{table_name}&quot;
+  ]
+}</pre>
+</div>
+
+
+  </main>
+</body>
+</html>

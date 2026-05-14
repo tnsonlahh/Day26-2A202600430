@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.venv/
+.tmp/
+.npm-cache/
+implementation/*.db
+implementation/*.db-journal
+implementation/tests/.tmp/
